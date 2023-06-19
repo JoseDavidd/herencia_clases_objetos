@@ -2,10 +2,14 @@ from user import User
 
 class Alumno(User):
 
-    def __init__(self):
+    def __init__(self,nombre,correo,turno):
+        self.nombre = nombre
+        self.correo = correo
+        self.turno = turno
+        print("randomuser...")
         super().__init__()
-        self.nota = 0
-        self.turno = "A"
+
+
 
     def __str__(self):
         buffer = []
