@@ -1,6 +1,6 @@
 from generarNombre import GenerarNombre
 
-class User:
+class dataUserGenerator:
     def __init__(self):
         gen = GenerarNombre()
         self.nombre = gen.get_nombre()
