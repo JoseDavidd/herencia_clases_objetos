@@ -7,7 +7,8 @@ aulas =[
     Aula(Profesor("Fernando Sanchez", 3, 6)),
     Aula(Profesor("Paula Tejero", 2, 7)),
     Aula(Profesor("Alicia Pomares", 1, 8)),
-    Aula(Profesor("Alejandro SantaMaria", 2, 10))
+    Aula(Profesor("Alejandro SantaMaria", 2, 10)),
+   
 ]
 
 CANTIDAD = {
@@ -16,10 +17,10 @@ CANTIDAD = {
 
 aulas[0].add(Alumno("PEPITO", "A", "PEPI@TO.com"))
 
-for i in range(CANTIDAD["alumnos"]):
-    aulas[i % len(aulas)].add(Alumno())
-contador = 0
 
+for i in range(CANTIDAD["alumnos"]):
+    aulas[i % len(aulas)].add(Alumno("PEPITO", "A", "PEPI@TO.com"))
+contador = 0
 
 for aula in range(len(aulas)):
     try:
